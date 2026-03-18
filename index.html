@@ -1,217 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENTRADA VIP - GRUPO 3Par</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Grupo VIP - Casal Liberal</title>
     <style>
-        :root {
-            --emerald: #2ecc71; 
-            --dark-emerald: #27ae60;
-            --dark: #0a0f0d;
-            --card: #151a17;
-            --success: #25d366;
-            --text-light: #ecf0f1;
-        }
-
         body {
-            background-color: var(--dark);
-            color: var(--text-light);
-            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .header {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000, #2c003e);
+            color: white;
             text-align: center;
-            padding: 20px 0;
-            width: 100%;
-            max-width: 400px;
         }
 
-        .logo-container {
-            width: 100%;
-            margin-bottom: 10px;
+        header {
+            padding: 40px 20px;
         }
 
-        .logo-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(46, 204, 113, 0.2);
+        header h1 {
+            font-size: 2.5em;
+            color: #ff2e88;
         }
 
-        .warning-box {
-            background: rgba(46, 204, 113, 0.1);
-            border: 1px dashed var(--emerald);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            max-width: 400px;
-            text-align: center;
-            font-size: 0.85rem;
+        .container {
+            padding: 20px;
         }
 
         .card {
-            background: var(--card);
-            width: 100%;
-            max-width: 400px;
+            background: rgba(255,255,255,0.1);
+            margin: 20px auto;
+            padding: 20px;
             border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-left: 5px solid var(--emerald);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            box-sizing: border-box;
+            max-width: 400px;
+            box-shadow: 0 0 15px rgba(255,0,150,0.3);
         }
 
-        h2 { 
-            margin-top: 0; 
-            font-size: 1.3rem; 
-            font-family: 'Playfair Display', serif;
-        }
-        
         .price {
-            font-size: 1.5rem;
-            color: var(--emerald);
-            font-weight: bold;
+            font-size: 1.8em;
+            color: #00ffcc;
             margin: 10px 0;
         }
 
-        .requirements {
-            list-style: none;
-            padding: 0;
-            font-size: 0.85rem;
-            color: #bbb;
-            margin-bottom: 20px;
+        .free {
+            font-size: 1.5em;
+            color: #00ff00;
+            margin: 10px 0;
         }
 
-        .requirements li { margin-bottom: 8px; }
-
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 15px;
+        button {
+            background: #ff2e88;
             border: none;
-            border-radius: 8px;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-            transition: 0.3s;
-            box-sizing: border-box;
-        }
-
-        .btn-wa { background-color: var(--success); color: white; }
-        .btn-pix { background-color: var(--emerald); color: black; }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 0.75rem;
-            color: #666;
-            text-align: center;
-        }
-
-        #pix-modal {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            color: black;
-            padding: 20px;
+            padding: 15px 25px;
             border-radius: 10px;
-            z-index: 100;
-            width: 85%;
-            max-width: 300px;
-            text-align: center;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
         }
 
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.8);
-            z-index: 99;
+        button:hover {
+            background: #ff0055;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.8em;
+            color: #ccc;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <div class="logo-container">
-            <img src=https://i.postimg.cc/SK1RjBVv/1773779376310.pngalt="Logo Grupo 3Par" class="logo-img">
-        </div>
-    </div>
+<header>
+    <h1>🔥 Grupo 3 e par 🔥</h1>
+    <p>Casais liberais & experiências exclusivas</p>
+</header>
 
-    <div class="warning-box">
-        🚨 <strong>INDISPENSÁVEL:</strong> Envio de <strong>vídeo selfie</strong> para validação de segurança após o cadastro.
-    </div>
+<div class="container">
 
     <div class="card">
-        <h2>Casal ou Solteira</h2>
-        <div class="price">FREE / VIP</div>
-        <ul class="requirements">
-            <li>✅ Verificação obrigatória</li>
-            <li>✅ Vídeo Selfie necessário</li>
-            <li>✅ Acesso imediato</li>
-        </ul>
-        <a href="https://api.whatsapp.com/send?phone=55998798756&text=Olá! Gostaria de validar meu acesso como Casal/Solteira no Grupo 3Par." class="btn btn-wa">Chamar no WhatsApp</a>
+        <h2>solteiro</h2>
+        <p>Acesso completo ao grupo VIP</p>
+        <div class="price">R$ 15,00</div>
+        <button onclick="comprar()">Entrar Agora</button>
     </div>
 
-    <div class="card" style="border-left-color: #ff3e3e;">
-        <h2>Solteiro (Single)</h2>
-        <div class="price">Taxa: R$ 15,90</div>
-        <ul class="requirements">
-            <li>✅ Manutenção: R$ 15,90 via Pix</li>
-            <li>✅ Vídeo Selfie necessário</li>
-            <li>✅ Envio do Comprovante</li>
-        </ul>
-        <button onclick="copyPix()" class="btn btn-pix">Copiar Chave PIX</button>
-        <p style="font-size: 10px; text-align: center; margin-top: 10px; color: #888;">Chave: 21982859872</p>
+
+    <div class="card">
+        <h2>💎 Mulheres & Casais</h2>
+        <p>Entrada GRATUITA mediante verificação</p>
+        <div class="free">GRÁTIS</div>
+        <p>✔ Envio de vídeo selfie para confirmação</p>
+        <button onclick="verificar()">Solicitar Acesso</button>
     </div>
 
-    <div class="footer">
-        Apenas para maiores de 18 anos. <br>
-        Respeito | Sigilo | Diversão
-    </div>
+</div>
 
-    <div id="overlay" class="overlay" onclick="closeModal()"></div>
-    <div id="pix-modal">
-        <h3>Chave Copiada!</h3>
-        <p>A chave <strong>21982859872</strong> foi copiada.</p>
-        <p>Pague e envie o comprovante + vídeo no WhatsApp.</p>
-        <button onclick="closeModal()" style="padding: 10px 20px; background: #2ecc71; border: none; color: white; border-radius: 5px; font-weight: bold;">ABRIR WHATSAPP</button>
-    </div>
+<footer>
+    <p>Pagamento via Pix 💸</p>
+    <p>Após pagamento ou verificação, acesso liberado</p>
+</footer>
 
-    <script>
-        function copyPix() {
-            const pixKey = "21982859872";
-            const dummy = document.createElement("textarea");
-            document.body.appendChild(dummy);
-            dummy.value = pixKey;
-            dummy.select();
-            document.execCommand("copy");
-            document.body.removeChild(dummy);
-            
-            document.getElementById('pix-modal').style.display = 'block';
-            document.getElementById('overlay').style.display = 'block';
-        }
+<script>
+function comprar() {
+    alert("Após o pagamento, envie o comprovante para o WhatsApp!");
+    window.location.href = "https://wa.me/5521998798756";
+}
 
-        function closeModal() {
-            document.getElementById('pix-modal').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-            window.location.href = "https://api.whatsapp.com/send?phone=55998798756&text=Olá! Já fiz o Pix e quero enviar o vídeo de verificação.";
-        }
-    </script>
+function verificar() {
+    alert("Envie um vídeo selfie para confirmação no WhatsApp!");
+    window.location.href = "https://wa.me/5521998798756";
+}
+</script>
 
 </body>
-</html>
+</html
 
 
 
